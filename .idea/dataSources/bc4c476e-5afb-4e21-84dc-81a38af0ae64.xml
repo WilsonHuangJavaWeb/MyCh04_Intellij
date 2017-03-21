@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="community2@114.33.246.89">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1" name="community2">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="dbtest"/>
+    <schema id="4" parent="1" name="information_schema"/>
+    <schema id="5" parent="1" name="mysql"/>
+    <schema id="6" parent="1" name="performance_schema"/>
+    <schema id="7" parent="1" name="sakila"/>
+    <schema id="8" parent="1" name="sys"/>
+    <schema id="9" parent="1" name="world"/>
+    <table id="10" parent="2" name="information"/>
+    <table id="11" parent="2" name="user"/>
+    <column id="12" parent="10" name="ID">
+      <Position>1</Position>
+      <DataType>varchar(32)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="13" parent="10" name="Title">
+      <Position>2</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="14" parent="10" name="Content">
+      <Position>3</Position>
+      <DataType>varchar(1024)|0</DataType>
+    </column>
+    <column id="15" parent="10" name="PublishingTime">
+      <Position>4</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="16" parent="10" name="PublishingUser">
+      <Position>5</Position>
+      <DataType>varchar(32)|0</DataType>
+    </column>
+    <index id="17" parent="10" name="PulishingUser_idx">
+      <ColNames>PublishingUser</ColNames>
+    </index>
+    <key id="18" parent="10" name="PRIMARY">
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="19" parent="10">
+      <ColNames>PublishingUser</ColNames>
+      <RefSchemaName>community2</RefSchemaName>
+      <RefTableName>user</RefTableName>
+      <RefColNames>ID</RefColNames>
+      <OnUpdate>no-action</OnUpdate>
+      <OnDelete>no-action</OnDelete>
+    </foreign-key>
+    <column id="20" parent="11" name="ID">
+      <Position>1</Position>
+      <Comment>主鍵</Comment>
+      <DataType>varchar(32)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="21" parent="11" name="UserName">
+      <Position>2</Position>
+      <Comment>使用者名稱唯一</Comment>
+      <DataType>varchar(32)|0</DataType>
+    </column>
+    <column id="22" parent="11" name="Password">
+      <Position>3</Position>
+      <DataType>varchar(32)|0</DataType>
+    </column>
+    <column id="23" parent="11" name="RealName">
+      <Position>4</Position>
+      <DataType>varchar(32)|0</DataType>
+    </column>
+    <key id="24" parent="11" name="PRIMARY">
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

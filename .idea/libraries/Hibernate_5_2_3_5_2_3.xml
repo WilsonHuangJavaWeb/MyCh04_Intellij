@@ -18,6 +18,15 @@
       <root url="jar://$PROJECT_DIR$/lib/jsr250-api-1.0.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/hibernate-core-5.2.3.Final.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/mysql-connector-java-5.1.40-bin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/cglib-2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-collections-3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-logging.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ejb3-persistence.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/hibernate3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jta-1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jta.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/log4j.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/slf4j-nop-1.6.4.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

@@ -8,7 +8,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 
 /**
- * Created by WilsonHuang on 2017/3/18.
+ * Created by ki264 on 2017/3/22.
  */
 @Entity
 public class Information {

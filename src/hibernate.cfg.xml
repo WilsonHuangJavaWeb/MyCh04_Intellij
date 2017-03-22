@@ -6,10 +6,10 @@
     <session-factory>
         <property name="connection.url">jdbc:mysql://114.33.246.89:3306/community2</property>
         <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
-        <mapping class="com.persistence.Information"/>
         <mapping resource="com/persistence/Information.hbm.xml"/>
-        <mapping class="com.persistence.User"/>
+        <mapping class="com.persistence.Information"/>
         <mapping resource="com/persistence/User.hbm.xml"/>
+        <mapping class="com.persistence.User"/>
         <!-- <property name="connection.username"/> -->
         <!-- <property name="connection.password"/> -->
 

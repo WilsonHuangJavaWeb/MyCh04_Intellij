@@ -18,4 +18,7 @@
             <column name="RealName" sql-type="varchar(32)" length="32" not-null="true"/>
         </property>
     </class>
+    <query name="getUserByUserName">
+        <![CDATA[from User where userName = ?]]>
+    </query>
 </hibernate-mapping>

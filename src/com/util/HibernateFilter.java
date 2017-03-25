@@ -27,7 +27,7 @@ public class HibernateFilter implements Filter {
 
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
-        servletRequest.setCharacterEncoding("UTF-8");
+        servletRequest.setCharacterEncoding("GBK");
         SessionFactory sf = HibernateUtil.getSessionFactory();
         try {
             log.debug("開始一個資料庫交易");
